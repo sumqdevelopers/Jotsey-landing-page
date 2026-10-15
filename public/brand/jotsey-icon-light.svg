@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Clipboard with lightning bolt – light background</title>
+  <defs>
+    <linearGradient id="bolt-grad-light" x1="0" y1="363.5" x2="0" y2="887.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18DCC6"/>
+      <stop offset=".3" stop-color="#1CD6C0"/>
+      <stop offset=".5" stop-color="#28BDAB"/>
+      <stop offset=".75" stop-color="#2E9C93"/>
+      <stop offset="1" stop-color="#2B807A"/>
+    </linearGradient>
+    <linearGradient id="fold-grad-light" x1="301" y1="0" x2="431.2" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B3B9CA"/>
+      <stop offset="1" stop-color="#DDE1E9"/>
+    </linearGradient>
+  </defs>
+  <path id="board" fill="#131D2E" d="M177 169.3H694.1A68 68 0 0 1 762.1 237.3V906.2A68 68 0 0 1 694.1 974.2H177A68 68 0 0 1 109 906.2V237.3A68 68 0 0 1 177 169.3Z"/>
+  <path id="paper" fill="#FFFFFF" d="M183.5 211.4H687.4A32 32 0 0 1 719.4 243.4V860.8L667.9 932.2H306.2L151.5 777.5V243.4A32 32 0 0 1 183.5 211.4Z"/>
+  <path id="fold-shade" fill="url(#fold-grad-light)" d="M256 777.5Q276.5 777.5 287 788L431.2 932.2H306.2L256 882Z"/>
+  <path id="fold-flap" fill="#D4DAE5" d="M151.5 777.5H256A45 45 0 0 1 301 822.5V927.2Z"/>
+  <path id="lines" fill="none" stroke="#939393" stroke-width="16" stroke-linecap="round" d="M242 418.5H629M242 535.5H629M242 652.5H522"/>
+  <path id="bolt-outline" fill="#FFFFFF" d="M856.6 290.9 L559.8 695 L694.1 695 L637.3 932.2 L667.9 932.2 L933.4 564 L795.3 564Z"/>
+  <path id="clip" fill="#1F938C" d="M269 222V153.5A24 24 0 0 1 293 129.5H354.5Q364.5 129.5 364.5 119.5A71 71 0 0 1 506.5 119.5Q506.5 129.5 516.5 129.5H579A24 24 0 0 1 603 153.5V222Z"/>
+  <path id="clip-band" fill="#277C74" d="M269 211.4H603V226.5A24 24 0 0 1 579 250.5H293A24 24 0 0 1 269 226.5Z"/>
+  <circle id="clip-hole" fill="#FFFFFF" cx="435.5" cy="120" r="29"/>
+  <path id="bolt" fill="url(#bolt-grad-light)" d="M823 363.5 L604.3 672 L723.3 672 L671.6 887.8 L888.5 587 L765.6 587Z"/>
+</svg>

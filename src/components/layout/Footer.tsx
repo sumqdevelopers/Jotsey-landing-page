@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container"
 import { complianceBadges, footerLinkGroups } from "@/data/navigation"
+import { asset } from "@/lib/asset"
 
 export default function Footer() {
   return (
@@ -7,7 +8,13 @@ export default function Footer() {
       <Container>
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <div className="font-display text-3xl font-semibold">jotsey</div>
+            <img
+              className="h-12 w-auto"
+              src={asset("/brand/jotsey-logo-dark.svg")}
+              alt="Jotsey"
+              width={113}
+              height={48}
+            />
             <p className="mt-5 max-w-xs text-sm leading-6 text-white/60">
               Ambient clinical intelligence that protects provider attention and
               returns time to care.

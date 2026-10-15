@@ -1,6 +1,7 @@
 import Container from "@/components/ui/Container"
 import { navLinks } from "@/data/navigation"
 import { useScrollProgress } from "@/hooks/useScrollProgress"
+import { asset } from "@/lib/asset"
 import { cx } from "@/lib/cx"
 
 /** 78px bar + 1px bottom border; keep in sync with `scroll-padding-top` in index.css. */
@@ -23,15 +24,24 @@ export default function Header() {
       }}
     >
       <Container className="flex h-[78px] items-center gap-8" wide>
-        <a
-          className={cx(
-            "font-display text-[28px] font-semibold tracking-[-0.04em] transition-colors duration-300",
-            onLight ? "text-brand-navy" : "text-white",
-          )}
-          href="#"
-          aria-label="Jotsey home"
-        >
-          jotsey
+        <a className="relative block h-11 w-[104px] shrink-0" href="#" aria-label="Jotsey home">
+          {/* Both marks stay mounted so the swap crossfades with the bar's background. */}
+          <img
+            className={cx(
+              "absolute inset-0 size-full transition-opacity duration-300",
+              onLight ? "opacity-0" : "opacity-100",
+            )}
+            src={asset("/brand/jotsey-logo-dark.svg")}
+            alt=""
+          />
+          <img
+            className={cx(
+              "absolute inset-0 size-full transition-opacity duration-300",
+              onLight ? "opacity-100" : "opacity-0",
+            )}
+            src={asset("/brand/jotsey-logo-light.svg")}
+            alt=""
+          />
         </a>
         <nav
           className={cx(
