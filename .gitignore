@@ -20,5 +20,6 @@ logs/
 /.plugins/
 /.opencode-skills/
 
-# Figma Make platform scripts and site settings
-/.figma/make/
+# Figma Make platform scripts. site.json stays tracked: vite.config.ts imports it.
+/.figma/make/*
+!/.figma/make/site.json

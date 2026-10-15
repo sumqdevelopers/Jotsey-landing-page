@@ -1,0 +1,18 @@
+{
+  "title": "Jotsey — AI clinical documentation that writes your SOAP notes",
+  "description": "Streamline clinical documentation with an AI platform that transcribes patient conversations into SOAP notes, saving providers up to 672 hours annually.",
+  "language": "en",
+  "robots": {
+    "index": false
+  },
+  "icons": {
+    "icon": "favicon.svg"
+  },
+  "openGraph": {
+    "image": "assets/images/og-image.jpg"
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}
