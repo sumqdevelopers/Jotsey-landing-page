@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+@import 'tailwindcss';
+@import 'lenis/dist/lenis.css';
+
+/* Viewports big enough to pin a full section (heading + panel) below the 79px header. */
+@custom-variant pin {
+  @media (min-width: 1024px) and (min-height: 760px) {
+    @slot;
+  }
+}
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Lora', Georgia, Cambria, 'Times New Roman', Times, serif;
+
+  /* Brand Core / Typography */
+  --color-brand-navy: #0C1A30;       /* Primary dark (Headings, dark section backgrounds, primary text base) */
+  --color-brand-slate: #1E293B;      /* Ink Slate (Body text, secondary headers) */
+  --color-brand-light: #F8FAFC;      /* Base Light (Page background, light cards, neutral section background) */
+
+  /* AI & Tech Accents */
+  --color-accent-teal: #00A499;       /* Medical AI Teal (Primary CTAs, active states, key interactive elements) */
+  --color-accent-cyan: #00E5D0;       /* Cyber Cyan (Glow accents, AI indicators, live badges, live waves) */
+  --color-accent-lavender: #6C63FF;   /* Intelligence Lavender (Secondary accents, AI tags, subtle highlights) */
+
+  /* Surface & Border Neutrals */
+  --color-surface-card: #FFFFFF;     /* Pure White cards */
+  --color-surface-subtle: #F1F5F9;   /* Muted grey backgrounds / inactive cards */
+  --color-border-subtle: #E2E8F0;    /* Soft dividers and card borders */
+  --color-border-focus: #CBD5E1;     /* Active borders */
+
+  /* Media */
+  --color-media-dark: #212830;       /* Backdrop matching the dark product screenshots in How it works */
+}
+
+html {
+  scroll-behavior: smooth;
+  /* keeps anchored sections clear of the sticky 78px header */
+  scroll-padding-top: 79px;
+}
+
+/* Lenis drives scrolling itself; native smoothing would fight it */
+html.lenis {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-brand-light);
+  color: var(--color-brand-slate);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  transition: opacity 160ms ease, transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.82;
+}
+
+button:active,
+a:active {
+  transform: translateY(1px);
+}
+
+input[type='range'] {
+  height: 4px;
+  border-radius: 999px;
+}
+
+.wave-bar {
+  animation: wave 1.1s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes wave {
+  from {
+    transform: scaleY(0.5);
+    opacity: 0.55;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.text-gradient-wave {
+  background: linear-gradient(
+    120deg,
+    var(--color-accent-cyan) 0%,
+    var(--color-accent-teal) 30%,
+    var(--color-accent-lavender) 55%,
+    var(--color-accent-teal) 80%,
+    var(--color-accent-cyan) 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* keeps descenders (p, y) inside the painted area */
+  padding-bottom: 0.08em;
+  animation: gradient-wave 7s ease-in-out infinite alternate;
+}
+
+@keyframes gradient-wave {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .wave-bar,
+  .text-gradient-wave {
+    animation: none;
+  }
+}
