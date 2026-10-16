@@ -19,4 +19,20 @@ export const reviews: Review[] = [
     name: "Dr. Kayla Meyer",
     role: "Behavioral Health",
   },
+    {
+    quote:
+      "I especially value the continuity between visits. Jotsey keeps the clinical thread intact without adding another task to my day.",
+    name: "Dr. Kayla Meyer",
+    role: "Behavioral Health",
+  },    {
+    quote:
+      "I especially value the continuity between visits. Jotsey keeps the clinical thread intact without adding another task to my day.",
+    name: "Dr. Kayla Meyer",
+    role: "Behavioral Health",
+  },    {
+    quote:
+      "I especially value the continuity between visits. Jotsey keeps the clinical thread intact without adding another task to my day.",
+    name: "Dr. Kayla Meyer",
+    role: "Behavioral Health",
+  },
 ]
