@@ -8,7 +8,7 @@ interface WorkspacePreviewProps {
 
 export default function WorkspacePreview({ steps, activeIndex }: WorkspacePreviewProps) {
   return (
-    <div className="flex min-h-0 flex-col bg-brand-light p-8 pin:p-7">
+    <div className="flex min-h-0 flex-col bg-brand-light p-8 pin:p-7 dark:bg-white/[0.03]">
       <div className="mb-6 flex items-center justify-between pin:mb-5">
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-accent-lavender">
@@ -18,7 +18,7 @@ export default function WorkspacePreview({ steps, activeIndex }: WorkspacePrevie
             {steps[activeIndex].title} with confidence
           </h3>
         </div>
-        <span className="rounded-full bg-surface-card px-3 py-2 text-[11px] font-medium text-accent-lavender">
+        <span className="rounded-full bg-surface-raised px-3 py-2 text-[11px] font-medium text-accent-lavender">
           Synced with your EHR
         </span>
       </div>

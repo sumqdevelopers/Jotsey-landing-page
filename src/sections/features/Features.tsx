@@ -37,7 +37,7 @@ export default function Features() {
             </div>
           </FeatureCard>
 
-          <FeatureCard className="bg-accent-cyan/10 text-ink">
+          <FeatureCard className="bg-accent-cyan/10 text-ink dark:bg-accent-cyan/[0.14]">
             <p className="font-display text-5xl font-semibold tracking-[-0.05em]">
               99.2%
             </p>
@@ -51,11 +51,11 @@ export default function Features() {
             </div>
           </FeatureCard>
 
-          <FeatureCard className="bg-surface-subtle text-ink">
-            <ul className="grid grid-cols-3 gap-2" aria-label="Supported EHR systems">
+          <FeatureCard className="bg-surface-subtle text-ink dark:bg-surface-raised">
+            <ul className="grid grid-cols-6 gap-2" aria-label="Supported EHR systems">
               {ehrLogos.map((logo) => (
                 <li
-                  className="flex aspect-square items-center justify-center rounded-xl bg-white p-3 shadow-sm"
+                  className="flex aspect-square items-center justify-center rounded-lg bg-white p-1.5 shadow-sm"
                   key={logo}
                 >
                   <img className="max-h-full max-w-full object-contain" src={logo} alt="" />
@@ -82,7 +82,7 @@ export default function Features() {
             </div>
           </FeatureCard>
 
-          <FeatureCard className="bg-accent-teal/10 text-ink">
+          <FeatureCard className="bg-accent-teal/10 text-ink dark:bg-accent-teal/[0.16]">
             <span className="text-xs font-semibold uppercase tracking-[0.16em]">
               Provider capacity
             </span>

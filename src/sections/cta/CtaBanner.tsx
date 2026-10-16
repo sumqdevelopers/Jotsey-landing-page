@@ -1,7 +1,7 @@
 export default function CtaBanner() {
   return (
     <section className="bg-surface-card py-20" id="contact" aria-labelledby="cta-title">
-      <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-6 rounded-3xl border border-surface-card bg-linear-135 from-accent-lavender/10 via-surface-card via-52% to-accent-cyan/10 px-8 py-16 text-center shadow-xl shadow-accent-lavender/10">
+      <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-6 rounded-3xl border border-surface-raised bg-surface-raised bg-linear-135 from-accent-lavender/10 via-surface-raised via-52% to-accent-cyan/10 px-8 py-16 text-center shadow-xl shadow-accent-lavender/10">
         <h2
           className="font-display max-w-3xl text-4xl font-semibold text-ink"
           id="cta-title"

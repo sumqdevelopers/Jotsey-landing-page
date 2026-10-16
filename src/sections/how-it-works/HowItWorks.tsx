@@ -31,7 +31,7 @@ export default function HowItWorks() {
               title="From conversation to signed note in seconds."
               titleId="how-title"
             />
-            <div className="grid overflow-hidden rounded-xl border border-border-subtle bg-surface-card shadow-xl lg:grid-cols-[32%_68%] pin:max-h-[600px] pin:min-h-0 pin:flex-1 pin:grid-rows-[minmax(0,1fr)]">
+            <div className="grid overflow-hidden rounded-xl border border-border-subtle bg-surface-raised shadow-xl lg:grid-cols-[32%_68%] pin:max-h-[600px] pin:min-h-0 pin:flex-1 pin:grid-rows-[minmax(0,1fr)]">
               <div className="relative flex flex-col">
                 {/* One highlight that glides to the active tab, timed with the step scroll. */}
                 <div

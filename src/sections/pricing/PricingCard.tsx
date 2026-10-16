@@ -13,8 +13,8 @@ export default function PricingCard({ tier, billing }: PricingCardProps) {
       className={cx(
         "relative flex min-h-[540px] flex-col rounded-2xl border p-7 shadow-sm",
         tier.popular
-          ? "border-2 border-accent-teal bg-linear-to-b from-accent-teal/10 to-surface-card"
-          : "border-border-subtle bg-surface-card",
+          ? "border-2 border-accent-teal bg-linear-to-b from-accent-teal/10 to-surface-raised"
+          : "border-border-subtle bg-surface-raised",
       )}
     >
       {tier.popular && (

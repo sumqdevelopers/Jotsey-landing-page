@@ -25,7 +25,7 @@ export default function RoiResults({ metrics }: RoiResultsProps) {
 
   return (
     <div
-      className="flex flex-col rounded-3xl border border-accent-teal/35 bg-surface-subtle p-7">
+      className="flex flex-col rounded-3xl border border-accent-teal/35 bg-surface-subtle p-7 dark:bg-white/[0.03]">
       <span className="w-fit rounded-full bg-accent-teal/10 px-3 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-ink">
         What you get back
       </span>
@@ -42,7 +42,7 @@ export default function RoiResults({ metrics }: RoiResultsProps) {
       <div className="mt-6 grid gap-3 sm:grid-cols-3">
         {stats.map((stat) => (
           <div
-            className="rounded-xl border border-ink/10 bg-brand-light p-4"
+            className="rounded-xl border border-ink/10 bg-brand-light p-4 dark:bg-white/[0.04]"
             key={stat.unit}
           >
             <strong className="font-display text-2xl font-semibold text-ink">

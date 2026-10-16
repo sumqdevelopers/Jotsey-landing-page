@@ -13,8 +13,8 @@ export default function ReviewCard({ review, active, onSelect }: ReviewCardProps
       className={cx(
         "flex min-h-[240px] flex-col rounded-lg border p-6 text-left transition",
         active
-          ? "border-accent-teal bg-surface-card"
-          : "border-border-subtle bg-surface-subtle",
+          ? "border-accent-teal bg-surface-raised"
+          : "border-border-subtle bg-surface-subtle dark:bg-surface-raised/70",
       )}
       type="button"
       aria-pressed={active}

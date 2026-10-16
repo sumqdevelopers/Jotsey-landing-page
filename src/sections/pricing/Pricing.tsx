@@ -25,7 +25,7 @@ export default function Pricing() {
             <PricingCard billing={billing} key={tier.name} tier={tier} />
           ))}
         </div>
-        <div className="mt-5 flex flex-col justify-between gap-4 rounded-xl border border-border-subtle p-6 sm:flex-row sm:items-center">
+        <div className="mt-5 flex flex-col justify-between gap-4 rounded-xl border border-border-subtle p-6 sm:flex-row dark:bg-surface-raised sm:items-center">
           <div>
             <p className="font-bold text-ink">Running a larger organization?</p>
             <p className="mt-1 text-sm text-brand-slate/75">

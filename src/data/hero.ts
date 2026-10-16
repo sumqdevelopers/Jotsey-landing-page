@@ -2,7 +2,9 @@ import { asset } from "@/lib/asset"
 import type { HeroHighlight } from "@/types/content"
 
 /** Swap for the final photo; any path under /public works. */
-export const heroImage = asset("/assets/images/hero_bg-2560.jpg")
+export const heroImage = asset("/assets/images/hero_bg-optimized.jpg")
+/** Portrait crop for phones and tablets held upright (see Hero). */
+export const heroImageMobile = asset("/assets/images/hero_bg_mobile-optimized.jpg")
 
 export const trustScore = {
   percent: 93,
