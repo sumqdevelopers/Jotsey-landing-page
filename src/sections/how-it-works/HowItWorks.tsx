@@ -4,6 +4,7 @@ import SectionHeading from "@/components/ui/SectionHeading"
 import { workflowSteps } from "@/data/workflow"
 import { STEP_DURATION_S, STEP_EASING_CSS, useScrollSteps } from "@/hooks/useScrollSteps"
 import StepButton from "@/sections/how-it-works/StepButton"
+import StoryStep from "@/sections/how-it-works/StoryStep"
 import WorkspacePreview from "@/sections/how-it-works/WorkspacePreview"
 
 export default function HowItWorks() {
@@ -31,7 +32,19 @@ export default function HowItWorks() {
               title="From conversation to signed note in seconds."
               titleId="how-title"
             />
-            <div className="grid overflow-hidden rounded-xl border border-border-subtle bg-surface-raised shadow-xl lg:grid-cols-[32%_68%] pin:max-h-[600px] pin:min-h-0 pin:flex-1 pin:grid-rows-[minmax(0,1fr)]">
+            {/* Smaller screens: a scroll-through story, one step after another. */}
+            <ol className="pin:hidden">
+              {workflowSteps.map((step, index) => (
+                <StoryStep
+                  index={index}
+                  isLast={index === workflowSteps.length - 1}
+                  key={step.title}
+                  step={step}
+                />
+              ))}
+            </ol>
+            {/* Large screens: the pinned panel that steps through as you scroll. */}
+            <div className="hidden overflow-hidden rounded-xl border border-border-subtle bg-surface-raised shadow-xl pin:grid pin:max-h-[600px] pin:min-h-0 pin:flex-1 pin:grid-cols-[32%_68%] pin:grid-rows-[minmax(0,1fr)]">
               <div className="relative flex flex-col">
                 {/* One highlight that glides to the active tab, timed with the step scroll. */}
                 <div

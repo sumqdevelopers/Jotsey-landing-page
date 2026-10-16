@@ -153,13 +153,25 @@ input[type='range'] {
   }
 }
 
+/* Dashes travelling along the How it works story connectors. */
+.dash-flow {
+  animation: dash-flow 1.4s linear infinite;
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
   .wave-bar,
-  .text-gradient-wave {
+  .text-gradient-wave,
+  .dash-flow {
     animation: none;
   }
 }
