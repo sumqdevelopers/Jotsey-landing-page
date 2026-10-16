@@ -1,13 +1,21 @@
 import { useThemeContext } from "@/hooks/useThemeContext"
 import { cx } from "@/lib/cx"
 
-export default function ThemeToggle() {
+interface ThemeToggleProps {
+  /** True once the header has turned into a light bar; otherwise it sits over something dark. */
+  lightBar: boolean
+}
+
+export default function ThemeToggle({ lightBar }: ThemeToggleProps) {
   const { theme, toggleTheme } = useThemeContext()
   const isDark = theme === "dark"
 
   return (
     <button
-      className="relative grid size-11 place-items-center overflow-hidden rounded-full border border-ink/15 text-ink"
+      className={cx(
+        "relative grid size-11 place-items-center overflow-hidden rounded-full border transition-colors duration-300",
+        lightBar ? "border-ink/15 text-ink" : "border-white/30 text-white",
+      )}
       type="button"
       onClick={toggleTheme}
       aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
