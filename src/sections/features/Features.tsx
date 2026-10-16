@@ -22,7 +22,7 @@ export default function Features() {
           </p>
         </div>
         <div className="grid auto-rows-[240px] gap-4 lg:grid-cols-3">
-          <FeatureCard className="relative overflow-hidden bg-brand-navy text-white lg:col-span-2">
+          <FeatureCard className="relative overflow-hidden bg-emphasis text-white lg:col-span-2">
             <span className="w-fit rounded-full border border-accent-cyan/30 px-3 py-1 text-xs font-medium text-accent-cyan">
               Live ambient stream
             </span>
@@ -37,7 +37,7 @@ export default function Features() {
             </div>
           </FeatureCard>
 
-          <FeatureCard className="bg-accent-cyan/10 text-brand-navy">
+          <FeatureCard className="bg-accent-cyan/10 text-ink">
             <p className="font-display text-5xl font-semibold tracking-[-0.05em]">
               99.2%
             </p>
@@ -51,11 +51,11 @@ export default function Features() {
             </div>
           </FeatureCard>
 
-          <FeatureCard className="bg-surface-subtle text-brand-navy">
+          <FeatureCard className="bg-surface-subtle text-ink">
             <ul className="grid grid-cols-3 gap-2" aria-label="Supported EHR systems">
               {ehrLogos.map((logo) => (
                 <li
-                  className="flex aspect-square items-center justify-center rounded-xl bg-surface-card p-3 shadow-sm"
+                  className="flex aspect-square items-center justify-center rounded-xl bg-white p-3 shadow-sm"
                   key={logo}
                 >
                   <img className="max-h-full max-w-full object-contain" src={logo} alt="" />
@@ -82,14 +82,14 @@ export default function Features() {
             </div>
           </FeatureCard>
 
-          <FeatureCard className="bg-accent-teal/10 text-brand-navy">
+          <FeatureCard className="bg-accent-teal/10 text-ink">
             <span className="text-xs font-semibold uppercase tracking-[0.16em]">
               Provider capacity
             </span>
             <p className="font-display text-6xl font-semibold tracking-[-0.06em]">
               672<span className="ml-2 text-lg">hrs/year</span>
             </p>
-            <p className="text-sm text-brand-navy/65">
+            <p className="text-sm text-ink/65">
               Potential time reclaimed per provider.
             </p>
           </FeatureCard>

@@ -22,11 +22,11 @@ export default function PricingCard({ tier, billing }: PricingCardProps) {
           Most popular
         </span>
       )}
-      <h3 className="text-xl font-semibold text-brand-navy">{tier.name}</h3>
+      <h3 className="text-xl font-semibold text-ink">{tier.name}</h3>
       <p className="mt-3 min-h-12 text-sm leading-6 text-brand-slate/75">
         {tier.description}
       </p>
-      <p className="mt-7 flex items-end text-brand-navy">
+      <p className="mt-7 flex items-end text-ink">
         <strong className="text-5xl font-bold tracking-[-0.04em]">
           ${getDisplayPrice(tier, billing)}
         </strong>
@@ -48,7 +48,7 @@ export default function PricingCard({ tier, billing }: PricingCardProps) {
           "mt-8 rounded-md border px-5 py-3 text-center text-sm font-semibold",
           tier.popular
             ? "border-accent-teal bg-accent-teal text-brand-navy"
-            : "border-brand-navy text-brand-navy",
+            : "border-ink text-ink",
         )}
         href="#contact"
       >

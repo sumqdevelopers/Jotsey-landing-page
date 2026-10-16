@@ -7,7 +7,7 @@ interface FaqItemProps {
 export default function FaqItem({ faq }: FaqItemProps) {
   return (
     <details className="group py-5">
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-medium text-brand-navy">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-medium text-ink">
         {faq.question}
         <span
           className="flex size-8 shrink-0 items-center justify-center rounded-full border border-border-focus text-lg group-open:rotate-45"

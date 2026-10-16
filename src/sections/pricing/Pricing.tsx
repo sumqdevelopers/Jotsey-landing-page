@@ -27,13 +27,13 @@ export default function Pricing() {
         </div>
         <div className="mt-5 flex flex-col justify-between gap-4 rounded-xl border border-border-subtle p-6 sm:flex-row sm:items-center">
           <div>
-            <p className="font-bold text-brand-navy">Running a larger organization?</p>
+            <p className="font-bold text-ink">Running a larger organization?</p>
             <p className="mt-1 text-sm text-brand-slate/75">
               Custom agreements, advanced security, and implementation support.
             </p>
           </div>
           <a
-            className="rounded-md border border-brand-navy px-6 py-3 text-center text-sm font-semibold text-brand-navy"
+            className="rounded-md border border-ink px-6 py-3 text-center text-sm font-semibold text-ink"
             href="#contact"
           >
             Talk to us

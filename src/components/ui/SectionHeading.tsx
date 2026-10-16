@@ -31,7 +31,7 @@ export default function SectionHeading({
       <Eyebrow>{eyebrow}</Eyebrow>
       <h2
         className={cx(
-          "font-display font-semibold text-brand-navy",
+          "font-display font-semibold text-ink",
           size === "lg" ? "mt-4 text-5xl tracking-[-0.03em]" : "mt-3 text-4xl",
           titleClassName,
         )}

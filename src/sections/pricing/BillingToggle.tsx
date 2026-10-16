@@ -25,7 +25,7 @@ export default function BillingToggle({ value, onChange }: BillingToggleProps) {
           <button
             className={cx(
               "rounded-full px-5 py-2 text-sm font-semibold",
-              selected ? "bg-surface-card text-brand-navy shadow-sm" : "text-brand-slate/75",
+              selected ? "bg-surface-card text-ink shadow-sm" : "text-brand-slate/75",
             )}
             type="button"
             aria-pressed={selected}

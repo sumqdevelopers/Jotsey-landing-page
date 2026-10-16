@@ -15,7 +15,7 @@ export default function DiscoveryCallCard() {
       </h2>
       <div>
         <a
-          className="block rounded-full bg-surface-card px-5 py-3 text-center text-sm font-semibold text-accent-lavender"
+          className="block rounded-full bg-white px-5 py-3 text-center text-sm font-semibold text-accent-lavender"
           href="#contact"
         >
           Book a call

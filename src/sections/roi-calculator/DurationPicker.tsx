@@ -11,7 +11,7 @@ export default function DurationPicker({ options, value, onChange }: DurationPic
 
   return (
     <fieldset>
-      <legend className="mb-4 text-sm font-semibold text-brand-navy">
+      <legend className="mb-4 text-sm font-semibold text-ink">
         Typical appointment length
       </legend>
       <div className="flex flex-wrap gap-2">
@@ -20,8 +20,8 @@ export default function DurationPicker({ options, value, onChange }: DurationPic
             className={cx(
               "rounded-full border px-4 py-2 text-sm font-semibold",
               value === option
-                ? "border-brand-navy bg-brand-navy text-white"
-                : "border-brand-navy/10 text-brand-navy",
+                ? "border-emphasis bg-emphasis text-white"
+                : "border-ink/10 text-ink",
             )}
             type="button"
             aria-pressed={value === option}

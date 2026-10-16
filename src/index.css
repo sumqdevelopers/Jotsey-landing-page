@@ -31,6 +31,37 @@
 
   /* Media */
   --color-media-dark: #212830;       /* Backdrop matching the dark product screenshots in How it works */
+
+  /* Theme-aware roles (redefined for dark mode below) */
+  --color-ink: #0C1A30;              /* Headings & primary text on page surfaces */
+  --color-emphasis: #0C1A30;         /* Dark highlight fills with white text: active tab, dark buttons */
+}
+
+/*
+ * Dark theme: only page surfaces, borders and text roles flip.
+ * brand-navy stays constant — it's the brand dark used for the hero, footer and
+ * text on teal buttons — and the accents are unchanged.
+ */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-brand-light: #0A1322;
+  --color-brand-slate: #CBD5E1;
+  --color-surface-card: #0F1A2C;
+  --color-surface-subtle: #0C1626;
+  --color-border-subtle: #1C2A40;
+  --color-border-focus: #2A3A55;
+  --color-ink: #F1F5F9;
+  --color-emphasis: #1D3557;
+}
+
+/* Added by useTheme for the length of a theme switch so every colour eases over together. */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow, opacity !important;
+  transition-duration: 400ms !important;
+  transition-timing-function: ease !important;
 }
 
 html {

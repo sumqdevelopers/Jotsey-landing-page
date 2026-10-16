@@ -18,13 +18,13 @@ export default function RoiCalculator() {
           title="See what post-clinic time is costing you."
           titleId="savings-title"
         />
-        <div className="grid gap-6 rounded-[28px] border border-brand-navy/10 bg-brand-light p-7 shadow-2xl shadow-brand-navy/10 lg:grid-cols-2 lg:p-10">
+        <div className="grid gap-6 rounded-[28px] border border-ink/10 bg-brand-light p-7 shadow-2xl shadow-brand-navy/10 lg:grid-cols-2 lg:p-10">
           <form className="flex flex-col gap-9" onSubmit={(event) => event.preventDefault()}>
             <div>
-              <span className="rounded-full bg-accent-teal/10 px-3 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-brand-navy">
+              <span className="rounded-full bg-accent-teal/10 px-3 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-ink">
                 Your practice
               </span>
-              <h3 className="font-display mt-4 text-3xl font-semibold text-brand-navy">
+              <h3 className="font-display mt-4 text-3xl font-semibold text-ink">
                 Tell us about your week
               </h3>
             </div>

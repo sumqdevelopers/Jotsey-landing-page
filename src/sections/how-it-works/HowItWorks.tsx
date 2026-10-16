@@ -35,7 +35,7 @@ export default function HowItWorks() {
               <div className="relative flex flex-col">
                 {/* One highlight that glides to the active tab, timed with the step scroll. */}
                 <div
-                  className="pointer-events-none absolute inset-x-0 top-0 bg-brand-navy transition-transform"
+                  className="pointer-events-none absolute inset-x-0 top-0 bg-emphasis transition-transform"
                   style={{
                     height: `${100 / workflowSteps.length}%`,
                     transform: `translateY(${activeIndex * 100}%)`,
