@@ -4,7 +4,7 @@ import HighlightIcon from "@/sections/hero/HighlightIcon"
 export default function TrustCard() {
   return (
     <aside
-      className="relative w-full max-w-[330px] overflow-hidden rounded-3xl border border-white/35 bg-white/20 p-5 shadow-2xl shadow-black/20 backdrop-blur-2xl dark:border-white/15 dark:bg-white/[0.07] dark:shadow-black/40 md:max-lg:justify-self-center lg:justify-self-end"
+      className="relative w-full max-w-[330px] overflow-hidden rounded-3xl border border-white/35 bg-white/20 p-5 shadow-2xl shadow-black/20 backdrop-blur-2xl dark:border-white/15 dark:bg-white/[0.07] dark:shadow-black/40 max-lg:justify-self-center lg:justify-self-end"
       aria-label="Why clinicians choose Jotsey"
     >
       {/* light catching the top edge + ambient glow */}

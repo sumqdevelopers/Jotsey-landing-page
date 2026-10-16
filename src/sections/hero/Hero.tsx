@@ -46,12 +46,12 @@ export default function Hero() {
       </div>
 
       <Container
-        className="grid w-full items-end gap-10 pb-14 pt-32 lg:grid-cols-[minmax(0,1fr)_auto] lg:pb-16"
+        className="grid w-full items-end gap-10 pb-14 pt-32 max-md:gap-0 max-md:pt-0 lg:grid-cols-[minmax(0,1fr)_auto] lg:pb-16"
         wide
       >
-        <div className="flex flex-col items-start md:max-lg:items-center md:max-lg:text-center lg:pb-1">
+        <div className="flex flex-col items-start max-lg:items-center max-lg:text-center max-md:min-h-svh max-md:pb-10 max-md:pt-24 lg:pb-1">
           <h1
-            className="font-display text-[clamp(2.75rem,5vw,5rem)] font-semibold leading-[0.98] tracking-[-0.045em] text-balance text-white"
+            className="font-display text-[clamp(1.5rem,calc((100vw-3rem)/10.6),2.75rem)] font-semibold max-md:mt-auto md:text-[clamp(2.75rem,5vw,5rem)] leading-[0.98] tracking-[-0.045em] text-balance text-white"
             id="hero-title"
           >
             The smartest way to
@@ -61,21 +61,21 @@ export default function Hero() {
             Jotsey transcribes patient conversations with 240ms latency and
             instantly drafts validated SOAP notes directly in your EHR.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3 md:max-lg:justify-center">
+          <div className="mt-8 flex flex-wrap gap-3 max-lg:justify-center max-md:mt-auto max-md:w-full max-md:max-w-[360px] max-md:flex-col">
             <a
-              className="rounded-lg bg-accent-teal px-6 py-3.5 text-[15px] font-semibold text-brand-navy shadow-lg shadow-accent-teal/30 dark:bg-accent-teal/85 dark:shadow-black/40"
+              className="rounded-lg bg-accent-teal px-6 py-3.5 text-center text-[15px] font-semibold text-brand-navy shadow-lg shadow-accent-teal/30 dark:bg-accent-teal/85 dark:shadow-black/40"
               href="#pricing"
             >
               Start free trial <ArrowIcon />
             </a>
             <a
-              className="rounded-lg border border-white bg-white px-6 py-3.5 text-[15px] font-semibold text-brand-navy dark:border-white/30 dark:bg-white/5 dark:text-white dark:backdrop-blur-md"
+              className="rounded-lg border border-white bg-white px-6 py-3.5 text-center text-[15px] font-semibold text-brand-navy dark:border-white/30 dark:bg-white/5 dark:text-white dark:backdrop-blur-md"
               href="#how"
             >
               See how it works
             </a>
           </div>
-          <p className="mt-5 text-[13px] text-white/65 dark:text-white/50">
+          <p className="mt-5 text-[13px] text-balance text-white/65 dark:text-white/50">
             No credit card required · HIPAA compliant · Cancel anytime
           </p>
         </div>
