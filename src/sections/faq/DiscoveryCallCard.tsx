@@ -1,7 +1,7 @@
 export default function DiscoveryCallCard() {
   return (
     <aside
-      className="flex min-h-[390px] flex-col justify-between rounded-[24px] bg-linear-145 from-brand-navy to-accent-lavender p-8 text-white"
+      className="flex min-h-[390px] flex-col justify-between self-start rounded-[24px] bg-linear-145 from-brand-navy to-accent-lavender p-8 text-white"
       aria-labelledby="discovery-call-title"
     >
       <span className="text-xs font-medium text-white/60">
