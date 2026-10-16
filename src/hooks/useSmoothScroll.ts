@@ -6,13 +6,14 @@ import { useEffect, useState } from "react"
  * navigation. Anchored sections clear the sticky header via `scroll-padding-top`
  * in index.css, which both Lenis and native scrolling respect.
  * Skipped entirely for users who prefer reduced motion — they keep native scrolling.
- * Returns the Lenis instance (null until mounted, or when reduced motion is on).
+ * Returns the Lenis instance (null until mounted, when disabled, or when reduced motion is on).
+ * Pass `enabled = false` to tear it down (e.g. on the auth screens).
  */
-export function useSmoothScroll() {
+export function useSmoothScroll(enabled = true) {
   const [lenis, setLenis] = useState<Lenis | null>(null)
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+    if (!enabled || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
 
     const lenis = new Lenis({ autoRaf: true, lerp: 0.1 })
     setLenis(lenis)
@@ -65,7 +66,7 @@ export function useSmoothScroll() {
       setLenis(null)
       lenis.destroy()
     }
-  }, [])
+  }, [enabled])
 
   return lenis
 }

@@ -33,6 +33,9 @@
   --color-border-focus: #CBD5E1;     /* Active borders */
   --color-surface-raised: #FFFFFF;   /* Cards & containers inside sections (lifts above the section in dark mode) */
 
+  /* Feedback */
+  --color-danger: #DC2626;           /* Form errors */
+
   /* Media */
   --color-media-dark: #212830;       /* Backdrop matching the dark product screenshots in How it works */
 
@@ -53,6 +56,7 @@
   --color-surface-card: #0F1A2C;
   --color-surface-subtle: #0C1626;
   --color-surface-raised: #15233A;
+  --color-danger: #F87171;
   --color-border-subtle: #1C2A40;
   --color-border-focus: #2A3A55;
   --color-ink: #F1F5F9;
@@ -75,8 +79,10 @@ html {
   scroll-padding-top: 79px;
 }
 
-/* Lenis drives scrolling itself; native smoothing would fight it */
-html.lenis {
+/* Lenis drives scrolling itself; native smoothing would fight it.
+   The auth screens opt out of smooth scrolling entirely. */
+html.lenis,
+html.native-scroll {
   scroll-behavior: auto;
 }
 

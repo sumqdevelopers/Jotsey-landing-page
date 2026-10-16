@@ -65,6 +65,15 @@ export default function Header() {
           <ThemeToggle lightBar={lightBar} />
           <a
             className={cx(
+              "hidden px-2 text-sm font-semibold transition-colors duration-300 md:block",
+              lightBar ? "text-ink" : "text-white",
+            )}
+            href="#/login"
+          >
+            Log in
+          </a>
+          <a
+            className={cx(
               "hidden rounded-full border px-5 py-3 text-sm font-semibold transition-colors duration-300 sm:block",
               lightBar ? "border-ink/15 text-ink" : "border-white/30 text-white",
             )}
@@ -78,7 +87,7 @@ export default function Header() {
               // solid white over the hero; the theme's emphasis fill once the bar is solid
               progress >= SOLID_THRESHOLD ? "bg-emphasis text-white" : "bg-white text-brand-navy",
             )}
-            href="#pricing"
+            href="#/signup"
           >
             Get started
           </a>
